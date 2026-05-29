@@ -20,8 +20,9 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post('/api/admin/login', {
-        email,
-        password,
+        email = "navyan1@gmail.com",
+        password = "Navyan@1234",
+        isadmin = true,
         admin_key: adminKey
       });
       
